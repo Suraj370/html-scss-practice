@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// Header
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    img {
+      object-fit: contain;
+      height: 80px;
+      margin-left: 5px;
+    }
+
+    span {
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+
+  &__middle {
+    display: flex;
+    flex: 0.7;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+
+    input {
+      border: none;
+      width: 100%;
+      padding: 10px;
+      outline: none;
+      font-size: medium;
+      background-color: transparent;
+    }
+  }
+
+  &__right {
+    display: flex;
+    padding-right: 20px;
+
+    span {
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+.material-icons {
+  color: gray;
+}
+
+// Sidebar
+.sidebar {
+  flex: 0.3;
+  max-width: 300px;
+  padding-right: 20px;
+
+  &__compose {
+    margin: 15px 10px;
+    text-transform: capitalize;
+    color: gray;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+
+    span {
+      margin-right: 5px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+
+    .material-icons {
+      margin: 7px;
+      cursor: pointer;
+    }
+  }
+}
+
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+  color: #818181;
+
+  .material-icons {
+    padding: 5px;
+  }
+
+  h3 {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &:hover,
+  &__active {
+    background-color: #fcecec;
+    color: #c04b37;
+    font-weight: 800;
+  }
+}
+
+// Main body
+.main__body {
+  display: flex;
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+// Email list
+.emailList {
+  flex: 1;
+  overflow: scroll;
+
+  &__settings {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    z-index: 999;
+    padding: 8px;
+
+    &Left {
+      display: flex;
+      align-items: center;
+    }
+
+    .material-icons {
+      margin: 5px;
+      cursor: pointer;
+    }
+  }
+
+  &__sections {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+
+    .section {
+      display: flex;
+      align-items: center;
+      border-bottom-width: 2px;
+      padding: 15px;
+      min-width: 200px;
+      cursor: pointer;
+      color: grey;
+      border-width: 0;
+
+      &__selected {
+        background-color: whitesmoke;
+        border-width: 3px;
+        color: red;
+        border-bottom: 3px solid red;
+
+        .material-icons {
+          color: red;
+        }
+      }
+
+      &:hover {
+        background-color: whitesmoke;
+        border-width: 3px;
+      }
+
+      h4 {
+        font-size: 14px;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+// Email Row
+.emailRow {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid whitesmoke;
+  cursor: pointer;
+  z-index: 999;
+
+  &:hover {
+    border-top: 1px solid whitesmoke;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.24);
+  }
+
+  &__options {
+    display: flex;
+    align-items: center;
+
+    .material-icons,
+    input {
+      margin: 5px;
+    }
+  }
+
+  &__message {
+    display: flex;
+    flex: 0.8;
+    align-items: center;
+    font-size: 13px;
+
+    h4 {
+      width: 400px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 0 5px;
+    }
+  }
+
+  &__title {
+    font-size: 13px;
+    flex: 0.3;
+  }
+
+  &__time {
+    padding-right: 15px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-weight: 400;
+    color: gray;
+  }
+}
