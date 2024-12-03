@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Clone</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="top-sidebar">
+                <div class="icon">
+                    <img src="assets/sideclose.png" alt="Close Icon" />
+                </div>
+                  <div class="icon new-chat">
+                    <img src="assets/newchat.png" alt="New Chat Icon" />
+                  </div>
+            </div>
+
+            <nav class="nav-links">
+                <div class="nav-group">
+                    <a href="#" class="nav-item ">
+                        <img src="assets/chatgpt.png" alt="ChatGPT Icon" />
+                        <span>ChatGPT</span>
+                    </a>
+
+                    <a href="#" class="nav-item ">
+                        <img src="assets/explore.png" alt="Explore GPT Icon" />
+                        <span>Wxplore GPT</span>
+                    </a>
+                  
+                </div>
+                <div class="nav-group">
+                    <div class="nav-header">Today</div>
+                    <a href="#" class="nav-item ">
+                        <span>Create a cartoon illustration</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                       <span>Study vocabulary</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span>Activities to make new friends</span>
+                    </a>
+                </div>
+                <div class="nav-group">
+                    <div class="nav-header">Yesterday</div>
+                    <a href="#" class="nav-item">
+                        <span>Web development tips</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span>CSS Layout Questions</span>
+                    </a>
+                </div>
+            </nav>
+
+           
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <div class="model-selector">
+                    <span>ChatGPT</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <button class="user-menu">
+                    <i class="fas fa-user-circle"></i>
+                </button>
+            </header>
+
+            <div class="chat-container">
+                <div class="welcome-screen">
+                    <div class="logo">
+                        <img src="assets/chatgpt.png" alt="ChatGPT Logo" />
+                      </div>
+                    <div class="examples">
+                        <div class="example-card">
+                            <i class="fas fa-image" style="color: #76D0EB;"></i>
+                            <p>Create a cartoon illustration of my pet</p>
+                        </div>
+                        <div class="example-card">
+                            <i class="fas fa-graduation-cap" style="color: #EC6262;"></i>
+                            <p>Study vocabulary</p>
+                        </div>
+                        <div class="example-card">
+                            <i class="fas fa-lightbulb" style=" color: #E2C541;"></i>
+                            <p>Activities to make new friends in a new city</p>
+                        </div>
+                        <div class="example-card">
+                            <i class="fas fa-image" style=" color: #CB8BD0;"></i>
+                            <p>Create a cartoon illustration of my pet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-container">
+                    <textarea 
+                        placeholder="Message ChatGPT..." 
+                        rows="1"
+                        autofocus
+                    ></textarea>
+                    <button class="send-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="disclaimer">
+                    Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts.
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
