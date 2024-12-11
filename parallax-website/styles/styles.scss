@@ -1,0 +1,118 @@
+$color_1: #333;
+$color_2: #fff;
+$color_3: #f4a261;
+$color_4: rgb(171, 161, 161);
+$color_5: #555;
+$color_6: white;
+$color_7: #aaa;
+$font-family_1: "Arial", sans-serif;
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: $font-family_1;
+	line-height: 1.6;
+	color: $color_1;
+}
+nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 10px 0;
+	z-index: 1000;
+	ul {
+		list-style-type: none;
+		display: flex;
+		justify-content: center;
+		li {
+			margin: 0 20px;
+			a {
+				color: $color_2;
+				text-decoration: none;
+				font-size: 18px;
+				&:hover {
+					color: $color_3;
+				}
+			}
+		}
+	}
+}
+.parallax {
+	position: relative;
+	min-height: 100vh;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.parallax1 {
+	background-image: url("https://images.pexels.com/photos/5409751/pexels-photo-5409751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+.parallax2 {
+	background-image: url("https://images.pexels.com/photos/1105389/pexels-photo-1105389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+.parallax3 {
+	background-image: url("https://images.pexels.com/photos/1134190/pexels-photo-1134190.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: $color_4;
+	text-align: center;
+	h1 {
+		font-size: 50px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 22px;
+		max-width: 600px;
+	}
+}
+.content {
+	padding: 50px;
+	background: #f4f4f4;
+	text-align: center;
+	h2 {
+		margin-bottom: 20px;
+		font-size: 30px;
+		color: $color_1;
+	}
+	p {
+		max-width: 800px;
+		margin: 0 auto;
+		font-size: 18px;
+		color: $color_5;
+	}
+}
+footer {
+	padding: 30px;
+	background: #333;
+	color: $color_6;
+	text-align: center;
+	h2 {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	p {
+		margin: 5px 0;
+		&:last-child {
+			font-size: 14px;
+			margin-top: 10px;
+			color: $color_7;
+		}
+	}
+}
